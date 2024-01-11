@@ -1,3 +1,3 @@
-# Ejercicios bgla
+# Ejercicios Xpath
 
-aqadasd
+Carpeta común ciclo. Día 1. 
