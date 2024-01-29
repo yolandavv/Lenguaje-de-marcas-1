@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE equipos_de_baloncesto SYSTEM "equipos.dtd">
+<equipos_de_baloncesto>
+  <equipo>
+    <nombre>Equipo A</nombre>
+    <ciudad>Ciudad A</ciudad>
+    <entrenador>Entrenador A</entrenador>
+    <jugadores>
+      <jugador posicion="Base">
+        <nombre>Jugador A1</nombre>
+        <nacionalidad>Nacionalidad A1</nacionalidad>
+      </jugador>
+      <jugador posicion="Alero">
+        <nombre>Jugador A2</nombre>
+        <nacionalidad>Nacionalidad A2</nacionalidad>
+      </jugador>
+      <!-- Puedes agregar más jugadores según sea necesario -->
+    </jugadores>
+  </equipo>
+
+  <equipo>
+    <nombre>Equipo B</nombre>
+    <ciudad>Ciudad B</ciudad>
+    <entrenador>Entrenador B</entrenador>
+    <jugadores>
+      <jugador posicion="Escolta">
+        <nombre>Jugador B1</nombre>
+        <nacionalidad>Nacionalidad B1</nacionalidad>
+      </jugador>
+      <jugador posicion="Pivot">
+        <nombre>Jugador B2</nombre>
+        <nacionalidad>Nacionalidad B2</nacionalidad>
+      </jugador>
