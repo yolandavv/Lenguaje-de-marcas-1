@@ -1,0 +1,17 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Definición del elemento dispositivo -->
+  <xs:element name="dispositivo">
+    <!-- Restricción para el contenido del elemento dispositivo -->
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <!-- Solo se permiten los valores "conectado" u "ocupado" -->
+        <xs:enumeration value="conectado"/>
+        <xs:enumeration value="ocupado"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+</xs:schema>
