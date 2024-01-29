@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Definición del elemento vehiculos -->
+  <xs:element name="vehiculos">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- Elemento vehiculo -->
+        <xs:element name="vehiculo" minOccurs="1" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <!-- Elemento nombre -->
+              <xs:element name="nombre" type="xs:string"/>
+              <!-- Elemento modelo -->
+              <xs:element name="modelo" type="xs:string"/>
+              <!-- Elemento fabricacion -->
+              <xs:element name="fabricacion">
+                <xs:complexType>
+                  <xs:sequence>
+                    <!-- Elemento inicio -->
+                    <xs:element name="inicio">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <
