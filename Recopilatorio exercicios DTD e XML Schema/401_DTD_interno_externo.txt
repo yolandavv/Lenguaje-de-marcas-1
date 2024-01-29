@@ -1,0 +1,17 @@
+DTD EXTERNO:
+
+<!ELEMENT libro (autor, titulo)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT titulo (#PCDATA)>
+
+DTD INTERNO:
+
+<!DOCTYPE libro [
+  <!ELEMENT libro (autor, titulo)>
+  <!ELEMENT autor (#PCDATA)>
+  <!ELEMENT titulo (#PCDATA)>
+]>
+<libro>
+  <autor>Miguel de Cervantes Saavedra</autor>
+  <titulo>El Quijote de la Mancha</titulo>
+</libro>
