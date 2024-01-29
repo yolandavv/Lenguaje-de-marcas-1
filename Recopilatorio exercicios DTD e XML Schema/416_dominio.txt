@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Definición del elemento dominio -->
+  <xs:element name="dominio">
+    <xs:simpleType>
+      <!-- Restricción para el contenido del elemento dominio -->
+      <xs:restriction base="xs:string">
+        <!-- Definición del patrón para validar el nombre de dominio -->
+        <xs:pattern value="[a-z0-9]+(-[a-z0-9]+)*\.[a-z]{2,3}"/>
+        <!-- Longitud mínima y máxima del nombre de dominio -->
+        <xs:minLength value="4"/>
+        <xs:maxLength value="67"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+</xs:schema>
