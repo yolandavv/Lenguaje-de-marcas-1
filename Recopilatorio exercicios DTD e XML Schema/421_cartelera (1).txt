@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Definición del elemento principal peliculas -->
+  <xs:element name="peliculas">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- Elemento película -->
+        <xs:element name="pelicula" minOccurs="1" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <!-- Atributos obligatorios -->
+              <xs:attribute name="codigo" type="xs:string" use="required"/>
+              <xs:attribute name="duracion" type="xs:string" use="required"/>
+              <xs:attribute name="ano" type="xs:string" use="required"/>
+              
+              <!-- Elementos obligatorios -->
+              <xs:element name="titulo" type="xs:string"/>
+              <xs:element name="pais-produccion" type="xs:string"/>
+              <xs:element name="generos" minOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="genero" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+              <!-- Elemento opcional -->
+              <xs:element name="titulo-original" type="xs:string" minOccurs="0"/>
+              <xs:element name="clasificacion" minOccurs="0">
+                <xs:complexType>
+                  <xs:attribute name="edad" type="xs:nonNegativeInteger" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="sin-clasificar" type="xs:empty" minOccurs="0"/>
+              <xs:element name="sinopsis" type="xs:string"/>
+              
+        
