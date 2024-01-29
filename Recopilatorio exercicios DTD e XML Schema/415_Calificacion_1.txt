@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Definición del elemento calificacion -->
+  <xs:element name="calificacion">
+    <xs:simpleType>
+      <!-- Restricción para el contenido del elemento calificacion -->
+      <xs:restriction base="xs:decimal">
+        <!-- Rango permitido entre 0 y 10 -->
+        <xs:minInclusive value="0"/>
+        <xs:maxInclusive value="10"/>
+        <!-- Definición de la precisión decimal (máximo una cifra decimal) -->
+        <xs:fractionDigits value="1"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+</xs:schema>
